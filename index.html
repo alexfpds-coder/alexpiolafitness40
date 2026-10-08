@@ -1,0 +1,166 @@
+html_content = """<!DOCTYPE html>
+<html lang='pt-BR'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Mundo Fitness | Curiosidades</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1f4068, #162447);
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 5px solid #e43f5a;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #cbd5e1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .intro h2 {
+            font-size: 2rem;
+            color: #1f4068;
+            margin-bottom: 15px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            padding: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 4px solid #e43f5a;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        .card h3 {
+            font-size: 1.4rem;
+            color: #162447;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        footer {
+            background-color: #162447;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>💪 Mundo Fitness</h1>
+        <p>Descubra segredos e curiosidades que vão impulsionar os seus treinos!</p>
+    </header>
+
+    <div class='container'>
+        <section class='intro'>
+            <h2>Você sabia?</h2>
+            <p>O corpo humano é uma máquina incrível. Pequenas mudanças na sua rotina de treinos e alimentação podem gerar resultados surpreendentes. Confira abaixo algumas das maiores curiosidades do mundo fitness!</p>
+        </section>
+
+        <main class='grid'>
+            <div class='card'>
+                <span class='card-icon'>🔥</span>
+                <h3>Efeito EPOC</h3>
+                <p>Mesmo após terminar o treino de alta intensidade (como o HIIT), seu corpo continua queimando calorias por até 24 horas para se recuperar. É o chamado consumo de oxigênio pós-exercício.</p>
+            </div>
+
+            <div class='card'>
+                <span class='card-icon'>🧠</span>
+                <h3>Cérebro mais Forte</h3>
+                <p>Exercícios aeróbicos estimulam a neurogênese (criação de novos neurônios) na área do cérebro associada à memória e ao aprendizado.</p>
+            </div>
+
+            <div class='card'>
+                <span class='card-icon'>💧</span>
+                <h3>Água e Força</h3>
+                <p>Uma desidratação de apenas 2% no peso corporal pode reduzir o seu desempenho físico e de força em até 20%. Mantenha-se sempre hidratado!</p>
+            </div>
+
+            <div class='card'>
+                <span class='card-icon'>😴</span>
+                <h3>Músculos crescem dormindo</h3>
+                <p>A maior parte da síntese muscular e liberação do hormônio do crescimento (GH) ocorre durante o sono profundo. Treinar sem dormir adequadamente limita muito seus ganhos.</p>
+            </div>
+
+            <div class='card'>
+                <span class='card-icon'>🏃‍♂️</span>
+                <h3>Memória Muscular</h3>
+                <p>Se você parar de treinar por um tempo, é muito mais fácil recuperar a massa muscular perdida do que foi para ganhá-la pela primeira vez, graças aos núcleos celulares extras mantidos nas fibras musculares.</p>
+            </div>
+
+            <div class='card'>
+                <span class='card-icon'>🍫</span>
+                <h3>Chocolate Amargo</h3>
+                <p>O consumo moderado de chocolate amargo rico em cacau melhora o fluxo sanguíneo e aumenta a produção de óxido nítrico, melhorando o rendimento do treino!</p>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Mundo Fitness - Curiosidades que Movem Você</p>
+    </footer>
+
+</body>
+</html>
+"""
+
+with open('index.html', 'w', encoding='utf-8') as f:
+    f.write(html_content)
+
+print("Arquivo 'index.html' criado com sucesso!")
